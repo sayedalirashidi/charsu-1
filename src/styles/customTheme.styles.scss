@@ -1,0 +1,140 @@
+$enable-shadows: true;
+// $primary: rgb(0, 19, 223);
+
+$body-color: #5a5a5a;
+// $body-bg: #f2f2f2;
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("/fonts/eot/IRANSansWeb.eot"), url("/fonts/woff2/IRANSansWeb.woff2"),
+    url("/fonts/woff/IRANSansWeb.woff"), url("/fonts/ttf/IRANSansWeb.ttf");
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/icons/icomoon.eot?nnu27t");
+  src: url("/icons/icomoon.eot?nnu27t#iefix") format("embedded-opentype"),
+    url("/icons/icomoon.ttf?nnu27t") format("truetype"),
+    url("/icons/icomoon.woff?nnu27t") format("woff"),
+    url("/icons/icomoon.svg?nnu27t#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: iranSans !important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  font-stretch: normal;
+  font-style: 400 !important;
+  line-height: 1.7 !important;
+  letter-spacing: normal;
+  text-align: right;
+  color: #5a5a5a;
+  padding: 0 !important;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.left-arrow::before {
+  content: "\f177";
+  font: 40px/1 "FontAwesome";
+  color: #00234f;
+  width: 33px;
+}
+.right-arrow::before {
+  content: "\f178";
+  font: 40px/1 "FontAwesome";
+  color: #00234f;
+  width: 33px;
+}
+.slick-next {
+  right: 100%;
+  top: 60%;
+}
+.slick-list {
+  margin-left: 60px;
+  margin-right: 10px;
+}
+////////////////////////////////
+.header-contianer {
+  .header-left-arrow::before {
+    content: "\f177";
+    font: 40px/1 "FontAwesome";
+    color: #f8f3eb;
+    width: 33px;
+  }
+  .header-right-arrow::before {
+    content: "\f178";
+    font: 40px/1 "FontAwesome";
+    color: #f8f3eb;
+    width: 33px;
+  }
+  .slick-next {
+    right: 85%;
+    top: 105%;
+  }
+  .slick-prev {
+    top: 105%;
+    left: 0px;
+  }
+  .slick-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media only screen and (max-width: 768px) {
+    .header-left-arrow::before {
+      content: "\f177";
+      font: 40px/1 "FontAwesome";
+      color: #00234f;
+      width: 33px;
+    }
+    .header-right-arrow::before {
+      content: "\f178";
+      font: 40px/1 "FontAwesome";
+      color: #00234f;
+      width: 33px;
+    }
+  }
+}
+///////////////////
+.nav-link {
+  color: #5a5a5a !important;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-align: right;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: right;
+  margin: 1rem 0 4rem 0;
+}
+.navbar-dark .navbar-toggler {
+  background-color: #00626d;
+  color: #00234f !important;
+}
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "./scss/bootstrap.scss";
+// @import "./home-page.scss";
+@import "./about-us.scss";
+// @import "./contact-us.scss";
