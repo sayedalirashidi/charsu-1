@@ -44,7 +44,7 @@ const ContactUs = ({ data }) => {
     formData.append("email", email);
     formData.append("phone", phone);
     e.preventDefault();
-    axios.post("http://localhost:8000/api/message", formData).then((res) => {
+    axios.post("http://103.215.223.142:8000/api/message", formData).then((res) => {
       setShow(true);
     });
   };
@@ -58,7 +58,7 @@ const ContactUs = ({ data }) => {
           <div className="group">
             <form
               onSubmit={submitMessage}
-              action="http://localhost:8000/api/text"
+              action="http://103.215.223.142:8000/api/text"
               method="POST"
             >
               <Row>

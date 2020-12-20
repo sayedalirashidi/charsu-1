@@ -37,7 +37,7 @@ const CustomNavbar = ({ nameClass }) => {
     e.preventDefault();
     const object = { email, password };
     axios
-      .post("http://localhost:8000/api/message", object)
+      .post("http://103.215.223.142:8000/api/message", object)
       .then((res) => {});
   };
   return (
@@ -182,7 +182,7 @@ const CustomNavbar = ({ nameClass }) => {
         <Modal.Body>
           <form
             onSubmit={submitMessage}
-            action="http://localhost:8000/api/text"
+            action="http://103.215.223.142:8000/api/text"
             method="POST"
           >
             <Row style={{ padding: "20px 100px" }}>

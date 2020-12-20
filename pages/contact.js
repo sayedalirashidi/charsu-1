@@ -12,7 +12,7 @@ const Main = () => {
   console.log("contact", data);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/contact").then((res) => {
+    axios.get("http://103.215.223.142:8000/api/contact").then((res) => {
       setdata(res.data.data);
     });
   }, []);
