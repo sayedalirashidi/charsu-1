@@ -37,7 +37,7 @@ const CustomNavbar = ({ nameClass }) => {
     e.preventDefault();
     const object = { email, password };
     axios
-      .post("http://api.comidt.ir/public/api/message", object)
+      .post("http://localhost:8000/api/message", object)
       .then((res) => {});
   };
   return (
@@ -66,9 +66,9 @@ const CustomNavbar = ({ nameClass }) => {
               پروژه های اجرا شده
             </Nav.Link>
             <Nav.Link
-              href="/contact.html"
+              href="/contact"
               className={
-                router.pathname == "/contact.html"
+                router.pathname == "/contact"
                   ? "mx-3 active-navlink"
                   : "mx-3"
               }
@@ -86,10 +86,10 @@ const CustomNavbar = ({ nameClass }) => {
               آموزشگاه مجازی
             </Nav.Link>
             <Nav.Link
-              href="/about.html"
+              href="/about"
               style={{ color: `${nameClass}` }}
               className={
-                router.pathname == "/about.html"
+                router.pathname == "/about"
                   ? `mx-3 active-navlink`
                   : ` mx-3`
               }
@@ -182,7 +182,7 @@ const CustomNavbar = ({ nameClass }) => {
         <Modal.Body>
           <form
             onSubmit={submitMessage}
-            action="http://api.comidt.ir/public/api/text"
+            action="http://localhost:8000/api/text"
             method="POST"
           >
             <Row style={{ padding: "20px 100px" }}>

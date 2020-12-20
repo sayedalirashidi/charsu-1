@@ -11,7 +11,7 @@ const Main = () => {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    axios.get("http://api.comidt.ir/public/api/pages/about-us").then((res) => {
+    axios.get("http://localhost:8000/api/pages/about-us").then((res) => {
       setdata(res.data.data);
     });
   }, []);

@@ -12,7 +12,7 @@ const Home = () => {
   console.log("index", data);
 
   useEffect(() => {
-    axios.get("http://api.comidt.ir/public/api/pages/index").then((res) => {
+    axios.get("http://localhost:8000/api/pages/index").then((res) => {
       setdata(res.data.data);
     });
   }, []);

@@ -44,7 +44,7 @@ const ContactUs = ({ data }) => {
     formData.append("email", email);
     formData.append("phone", phone);
     e.preventDefault();
-    axios.post("http://api.comidt.ir/public/api/message", formData).then((res) => {
+    axios.post("http://localhost:8000/api/message", formData).then((res) => {
       setShow(true);
     });
   };
@@ -58,7 +58,7 @@ const ContactUs = ({ data }) => {
           <div className="group">
             <form
               onSubmit={submitMessage}
-              action="http://api.comidt.ir/public/api/text"
+              action="http://localhost:8000/api/text"
               method="POST"
             >
               <Row>
