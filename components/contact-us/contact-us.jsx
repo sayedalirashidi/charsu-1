@@ -44,9 +44,11 @@ const ContactUs = ({ data }) => {
     formData.append("email", email);
     formData.append("phone", phone);
     e.preventDefault();
-    axios.post("http://103.215.223.142:8000/api/message", formData).then((res) => {
-      setShow(true);
-    });
+    axios
+      .post("http://103.215.223.142:8000/api/message", formData)
+      .then((res) => {
+        setShow(true);
+      });
   };
 
   return (

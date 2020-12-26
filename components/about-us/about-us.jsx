@@ -432,7 +432,7 @@ earned-titles"
           </Col>
         </Row>
         {documents === 1 && (
-          <Row className="d-flex flex-wrap justify-content-between scroll-box horizontal-scroll">
+          <Row className="d-flex justify-content-between scroll-box horizontal-scroll">
             {data.certificates &&
               data.certificates.map((item) => (
                 <Col xs={12} md={4} lg={2} className="mb-5">
@@ -443,7 +443,7 @@ earned-titles"
           </Row>
         )}
         {documents === 2 && (
-          <Row className="d-flex flex-wrap justify-content-between scroll-box horizontal-scroll">
+          <Row className="d-flex justify-content-between scroll-box horizontal-scroll">
             {data.appreciations &&
               data.appreciations.map((item) => (
                 <Col xs={12} md={4} lg={2} className="mb-5 mb-lg-0">
@@ -454,7 +454,7 @@ earned-titles"
           </Row>
         )}
         {documents === 3 && (
-          <Row className="justify-content-between flex-wrap scroll-box horizontal-scroll">
+          <Row className="justify-content-between flex-nowrap scroll-box horizontal-scroll">
             {data.communities &&
               data.communities.map((item) => (
                 <Col xs={12} md={4} lg={2} className="mb-5 mb-lg-0">

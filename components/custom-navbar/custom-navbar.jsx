@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classnames from "classnames";
+import axios from "axios";
 import { useRouter } from "next/router";
 import {
   Container,
@@ -24,6 +25,13 @@ const CustomNavbar = ({ nameClass }) => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [searchBox, setsearchBox] = useState(false);
+  // const [data, setdata] = useState([]);
+
+  // useEffect(() => {
+  //   axios.get("http://api.comidt.ir/public/api/link").then((res) => {
+  //     setdata(res.data.data);
+  //   });
+  // }, []);
 
   const changeEmail = (str) => {
     setemail(str);
@@ -54,6 +62,19 @@ const CustomNavbar = ({ nameClass }) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto ychizi">
+            {/* {data &&
+              data.map((link, index) => (
+                <Nav.Link
+                  href={link.link}
+                  className={
+                    router.pathname == `/${link.link}`
+                      ? "mx-3 active-navlink"
+                      : "mx-3"
+                  }
+                >
+                  {link.title}
+                </Nav.Link>
+              ))} */}
             <Nav.Link
               href="/"
               className={
@@ -66,9 +87,9 @@ const CustomNavbar = ({ nameClass }) => {
               پروژه های اجرا شده
             </Nav.Link>
             <Nav.Link
-              href="/contact"
+              href="/contact.html"
               className={
-                router.pathname == "/contact"
+                router.pathname == "/contact.html"
                   ? "mx-3 active-navlink"
                   : "mx-3"
               }
@@ -86,10 +107,10 @@ const CustomNavbar = ({ nameClass }) => {
               آموزشگاه مجازی
             </Nav.Link>
             <Nav.Link
-              href="/about"
+              href="/about.html"
               style={{ color: `${nameClass}` }}
               className={
-                router.pathname == "/about"
+                router.pathname == "/about.html"
                   ? `mx-3 active-navlink`
                   : ` mx-3`
               }

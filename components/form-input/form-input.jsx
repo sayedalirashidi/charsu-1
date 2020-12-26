@@ -12,7 +12,12 @@ const FromInput = ({
   };
   return (
     <div className="group">
-      <input className="form-input" name={name} onChange={changeInput} />
+      <input
+        className="form-input"
+        name={name}
+        onChange={changeInput}
+        required
+      />
       {label ? (
         <label
           className={`${

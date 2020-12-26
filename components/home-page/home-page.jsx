@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Courses from "../courses/courses";
 import Projects from "../projects/projects";
@@ -7,7 +7,6 @@ import CustomHeader from "../custom-header/custom-header";
 import Products from "../products/products";
 
 const HomePage = ({ data }) => {
-  const [step, setstep] = useState(1);
   return (
     <div className="main-container home-page">
       <div className="custom-header">
