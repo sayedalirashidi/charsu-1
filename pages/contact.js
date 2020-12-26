@@ -26,7 +26,7 @@ const Main = () => {
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossorigin="anonymous"
         />
-        <title>Charsu</title>
+        <title>چارسو امید و توسعه</title>
         <link rel="icon" href="/fdavicon.ico" />
       </Head>
       <CustomNavbar nameClass={navColor} />
