@@ -22,7 +22,7 @@ const sublinks = [
 const Footer = () => {
   const [data, setdata] = useState("");
   useEffect(() => {
-    axios.get("http://api.comidt.ir/public/api/footer").then((res) => {
+    axios.get("http://103.215.223.142:8000/api/footer").then((res) => {
       setdata(res.data.data);
     });
   }, []);

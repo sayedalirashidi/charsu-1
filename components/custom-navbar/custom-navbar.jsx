@@ -87,9 +87,9 @@ const CustomNavbar = ({ nameClass }) => {
               پروژه های اجرا شده
             </Nav.Link>
             <Nav.Link
-              href="/contact.html"
+              href="/contact"
               className={
-                router.pathname == "/contact.html"
+                router.pathname == "/contact"
                   ? "mx-3 active-navlink"
                   : "mx-3"
               }
@@ -107,10 +107,10 @@ const CustomNavbar = ({ nameClass }) => {
               آموزشگاه مجازی
             </Nav.Link>
             <Nav.Link
-              href="/about.html"
+              href="/about"
               style={{ color: `${nameClass}` }}
               className={
-                router.pathname == "/about.html"
+                router.pathname == "/about"
                   ? `mx-3 active-navlink`
                   : ` mx-3`
               }
