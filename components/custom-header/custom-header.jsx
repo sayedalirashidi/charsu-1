@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import Slider from "../slider/slider";
+import classnames from "classnames";
 
 const CustomHeader = ({ data }) => {
+  const [showMore, setshowMore] = useState(false);
+
   return (
     <div className="header-contianer">
       <Row>
@@ -10,12 +13,27 @@ const CustomHeader = ({ data }) => {
           <div className="position-relative h-100">
             <div className="text-secondary mb-3">{data.header_title1}</div>
             <h2 className="text-dark">{data.header_title2}</h2>
-            <p className="mb-5">{data.header_text}</p>
+            <p
+              className={classnames(
+                "mb-5 header-text",
+                showMore == false ? "less-text" : "more-text"
+              )}
+            >
+              {data.header_text}
+            </p>
+            <button
+              className="header-text-btn px-0 d-none d-lg-block"
+              onClick={() => {
+                setshowMore(true);
+              }}
+            >
+              مطالعه بیشتر
+            </button>
             <a
               href="#projects"
               className="position-absolute display-none d-lg-block"
               style={{
-                bottom: "0",
+                bottom: "-90px",
                 right: "0",
               }}
             >

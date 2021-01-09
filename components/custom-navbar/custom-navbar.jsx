@@ -18,20 +18,36 @@ import FormInput from "../form-input/form-input";
 
 import style from "./custom-navbar.module.scss";
 
+// const data = {
+//   title1: "صفحه نخست",
+//   link1: "",
+//   title2: "پروژه های اجرا شده",
+//   link2: "",
+//   title3: "ارتباط با ما",
+//   link3: "",
+//   title4: "اخبار",
+//   link4: "",
+//   title5: "آموزشگاه مجازی",
+//   link5: "",
+//   title6: "درباره ما",
+//   link6: "",
+// };
+
 const CustomNavbar = ({ nameClass }) => {
   const router = useRouter();
 
   const [modalShow, setModalShow] = useState(false);
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
+  const [data, setdata] = useState([]);
   const [searchBox, setsearchBox] = useState(false);
   // const [data, setdata] = useState([]);
 
-  // useEffect(() => {
-  //   axios.get("http://api.comidt.ir/public/api/link").then((res) => {
-  //     setdata(res.data.data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    axios.get("http://103.215.223.142:8000/api/nav").then((res) => {
+      setdata(res.data.data);
+    });
+  }, []);
 
   const changeEmail = (str) => {
     setemail(str);
@@ -81,41 +97,41 @@ const CustomNavbar = ({ nameClass }) => {
                 router.pathname == "/" ? "mx-3 active-navlink" : "mx-3"
               }
             >
-              صفحه نخست
+              {data.title1}
             </Nav.Link>
             <Nav.Link href="#pricing" className="mx-3">
-              پروژه های اجرا شده
+              {data.title2}
             </Nav.Link>
             <Nav.Link
-              href="/contact"
+              href="/contact.html"
               className={
-                router.pathname == "/contact"
+                router.pathname == "/contact.html"
                   ? "mx-3 active-navlink"
                   : "mx-3"
               }
             >
-              ارتباط با ما
+              {data.title3}
             </Nav.Link>
             <Nav.Link href="#news" className="mx-3">
-              اخبار
+              {data.title4}
             </Nav.Link>
             <Nav.Link
               href="#courses"
               style={{ color: `${nameClass}` }}
               className="mx-3"
             >
-              آموزشگاه مجازی
+              {data.title5}
             </Nav.Link>
             <Nav.Link
-              href="/about"
+              href="/about.html"
               style={{ color: `${nameClass}` }}
               className={
-                router.pathname == "/about"
+                router.pathname == "/about.html"
                   ? `mx-3 active-navlink`
                   : ` mx-3`
               }
             >
-              درباره ما
+              {data.title6}
             </Nav.Link>
           </Nav>
           <Nav className="mr-lg-5">

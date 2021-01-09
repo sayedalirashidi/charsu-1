@@ -496,6 +496,30 @@ $main-color: black;
     margin: auto;
   }
 }
+.header-text {
+  line-height: 28px;
+}
+.less-text {
+  max-height: 142px;
+  overflow: hidden;
+}
+.more-text {
+  max-height: auto;
+}
+.header-text-btn {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: 900;
+  border: none;
+  border-bottom: 2px solid #ffd798;
+  background: none;
+  &:focus {
+    border: none;
+    border-bottom: 2px solid #ffd798;
+    outline: none;
+  }
+}
+
 .scroll-box {
   overflow-x: scroll;
   overflow-y: hidden;
