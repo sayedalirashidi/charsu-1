@@ -198,7 +198,6 @@ const CustomNavbar = ({ nameClass }) => {
               <Button style={{ borderRadius: "10px" }}>جستجو</Button>
               <FormControl
                 type="text"
-                placeholder="جستجو"
                 className="mr-sm-2 w-100 ml-5 ml-md-2 ml-lg-0"
                 style={{ borderRadius: "10px" }}
               />
