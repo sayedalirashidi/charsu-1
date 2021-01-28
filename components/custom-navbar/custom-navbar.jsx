@@ -83,7 +83,7 @@ const CustomNavbar = ({ nameClass }) => {
                 <Nav.Link
                   href={link.link}
                   className={
-                    router.pathname == `/${link.link}`
+                    router.pathname === `/${link.link}`
                       ? "mx-3 active-navlink"
                       : "mx-3"
                   }
@@ -94,7 +94,7 @@ const CustomNavbar = ({ nameClass }) => {
             <Nav.Link
               href="/"
               className={
-                router.pathname == "/" ? "mx-3 active-navlink" : "mx-3"
+                router.pathname === "/" ? "mx-3 active-navlink" : "mx-3"
               }
             >
               {data.title1}
@@ -103,9 +103,9 @@ const CustomNavbar = ({ nameClass }) => {
               {data.title2}
             </Nav.Link>
             <Nav.Link
-              href="/contact.html"
+              href="/contact"
               className={
-                router.pathname == "/contact.html"
+                router.pathname === "/contact.html"
                   ? "mx-3 active-navlink"
                   : "mx-3"
               }
@@ -123,10 +123,10 @@ const CustomNavbar = ({ nameClass }) => {
               {data.title5}
             </Nav.Link>
             <Nav.Link
-              href="/about.html"
+              href="/about"
               style={{ color: `${nameClass}` }}
               className={
-                router.pathname == "/about.html"
+                router.pathname === "/about.html"
                   ? `mx-3 active-navlink`
                   : ` mx-3`
               }
@@ -192,7 +192,7 @@ const CustomNavbar = ({ nameClass }) => {
             </button>
           </Nav>
         </Navbar.Collapse>
-        {searchBox == true && (
+        {searchBox === true && (
           <div className="position-absolute search-box">
             <Form inline className="d-flex flex-nowrap">
               <Button style={{ borderRadius: "10px" }}>جستجو</Button>

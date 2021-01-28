@@ -36,7 +36,7 @@ const Courses = ({ data }) => {
   return (
     <>
       <Row className="justify-content-between">
-        <Col lg={5} md={12} xs={12} className="mb-5">
+        <Col lg={5} md={12} xs={12} className="text-justify mb-5">
           <div
             className="mb-4"
             style={{ color: "#ffd798", fontSize: "1.8rem" }}
@@ -137,7 +137,7 @@ const Courses = ({ data }) => {
             </div>
           </div>
         </Col>
-        <Col lg={6} md={12} xs={12}>
+        <Col lg={6} md={12} xs={12} className="text-justify">
           <ul className="d-flex mb-5">
             <li
               className={classnames(

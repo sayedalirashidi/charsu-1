@@ -15,10 +15,10 @@ const AboutUs = ({ data }) => {
           <div className="text-secondary mb-3">شعار ما بهترین تعهد ماست</div>
           <h2 className="title text-dark mt-2 mb-5">کیفیت ، تخصص ، صداقت</h2>
           <div className="box_banner position-relative">
-            <div className="d-block">
+            <div className="d-block poet-text">
               من که ره بردم به گنجِ حُسنِ بی‌پایان دوست
             </div>
-            <div className="d-block text-left">
+            <div className="d-block text-left poet-text">
               صد گدای همچو خود را بعد از این قارون کنم
             </div>
           </div>
@@ -294,7 +294,7 @@ earned-titles"
       </Row>
       <div className="box-center p-5 box-mobile  my-lg-5" id="engineering-oath">
         <h2 className="title text-dark mt-2 mb-5">سوگند نامه مهندسی</h2>
-        <p className="text-dark overflow-hidden">
+        <p className="text-dark overflow-hidden text-justify">
           من در پیشگاه خداوند متعال ، سوگند یاد می‌کنم : در مقام یک مهندس ، در
           تمام فعالیت‌های خود، صداقت، دقت، نظم، حفظ منافع اجتماع و رعایت حقوق
           همگان را سر لوحه‌ی کار خود در نظر گرفته، ایمنی، سلامت و آینده‌ی
@@ -373,11 +373,11 @@ earned-titles"
         <h2 className="text-dark title mt-2 mb-5 nezam">
           نظام نامه رفتار حرفه ای اخلاقی در مهندسی ساختمان
         </h2>
-        <p className="overflow-hidden text-dark">
+        <p className="overflow-hidden text-dark text-justify">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-          متنوع با هدف بهبود ابزارهای کاربردی می باشد
+          متنوع با هدف بهبود ابزارهای کاربردی می باشد.
         </p>
         <div className="d-flex justify-content-end">
           <button className="button text-secondary  bg-white border-bottom border-top-0 border-left-0 border-right-0 border-secondary p-0 ">

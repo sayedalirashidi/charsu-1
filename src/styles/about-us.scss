@@ -212,9 +212,9 @@ $main-color: black;
   font-size: 12px;
   color: $main-color;
 }
-
 .contact-us {
   margin-bottom: 8rem;
+  margin-left: 1.5rem;
 
   .icon {
     width: 36px;
@@ -269,6 +269,7 @@ $main-color: black;
   }
   .form-button {
     border-radius: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -276,9 +277,9 @@ $main-color: black;
 
 .home-page {
   max-width: 1366px;
-  margin-right: auto;
-  margin-left: auto;
-  .header-contianer {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  .header-container {
     margin-bottom: 8rem;
     position: relative;
     height: 760px;
@@ -426,7 +427,7 @@ $main-color: black;
     max-width: 1366px;
     margin-right: auto;
     margin-left: auto;
-    .header-contianer {
+    .header-container {
       // margin-bottom: 8rem;
       height: auto;
       margin-top: 0;

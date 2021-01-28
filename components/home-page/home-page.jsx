@@ -28,10 +28,10 @@ const HomePage = ({ data }) => {
       <div className="courses bg-dark">
         <Courses data={data} />
       </div>
-      <Container className=" d-lg-block">
+      <Container className="d-lg-block">
         <Products data={data} />
       </Container>
-      <div className="news" style={{ marginBottom: "8rem" }}>
+      <div className="news cooprations">
         <News data={data} />
       </div>
     </div>

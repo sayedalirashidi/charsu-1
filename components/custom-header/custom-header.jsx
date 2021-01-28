@@ -7,20 +7,21 @@ const CustomHeader = ({ data }) => {
   const [showMore, setshowMore] = useState(false);
 
   return (
-    <div className="header-contianer">
-      <Row>
+    <div className="header-container">
+      <Row className="margin-LR">
         <Col xs="12" lg="5">
           <div className="position-relative h-100">
             <div className="text-secondary mb-3">{data.header_title1}</div>
             <h2 className="text-dark">{data.header_title2}</h2>
             <p
               className={classnames(
-                "mb-5 header-text",
-                showMore == false ? "less-text" : "more-text"
+                "text-justify mb-5 header-text",
+                !showMore ? "less-text" : "more-text"
               )}
             >
               {data.header_text}
             </p>
+            { !showMore && 
             <button
               className="header-text-btn px-0 d-none d-lg-block"
               onClick={() => {
@@ -29,6 +30,7 @@ const CustomHeader = ({ data }) => {
             >
               مطالعه بیشتر
             </button>
+            }
             <a
               href="#projects"
               className="position-absolute display-none d-lg-block"

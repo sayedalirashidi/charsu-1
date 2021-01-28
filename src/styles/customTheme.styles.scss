@@ -70,7 +70,7 @@ a {
   margin-right: 10px;
 }
 ////////////////////////////////
-.header-contianer {
+.header-container {
   .header-left-arrow::before {
     content: "\f177";
     font: 40px/1 "FontAwesome";
@@ -119,6 +119,12 @@ a {
   font-weight: normal;
   line-height: 1.33;
   text-align: right;
+}
+.poet-text{
+  font-size:80%;
+}
+.margin-LR{
+  margin: 0 15px;
 }
 .title {
   font-size: 4rem;

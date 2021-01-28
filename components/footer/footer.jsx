@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <>
       <div className={style["footer-container"]}>
-        <div className="mb-5">
+        <div className="mb-5 margin-LR">
           <div>
             <img
               src="../logo.png"
@@ -41,9 +41,9 @@ const Footer = () => {
           </div>
           <Row className="justify-content-between">
             <Col xs={12} md={6} lg={3} className="mt-3 mt-md-5 mb-5 mb-md-0">
-              <div className="mb-3 mb-md-4">{data.text}</div>
+              <div className="text-justify mb-3 mb-md-4">{data.text}</div>
               <Row>
-                <Col className="d-flex align-items-center">
+                <Col className="d-flex align-items-center justify-content-end">
                   <div>{data.email}</div>
                   <div
                     className={classnames(
@@ -165,7 +165,7 @@ const Footer = () => {
           </Row>
         </div>
       </div>
-      <div className="bg-primary text-light text-center p-4">
+      <div className="bg-primary text-light text-center p-4 margin-LR">
         تمام حقوق این سایت متعلق به شرکت چارسو امید توسعه میباشد و هرگونه کپی
         برداری بدون درج منبع آن پیگرد قانونی خواهد داشت
       </div>

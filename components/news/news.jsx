@@ -5,7 +5,7 @@ import style from "./news.module.scss";
 
 const News = ({ data }) => {
   return (
-    <div className="news-container">
+    <div className="text-justify news-container">
       <Row className="justify-content-between align-items-center mb-5 px-lg-4">
         <h2 className="text-dark mb-0">{data.news_title}</h2>
         <button className={style["button"]}>
