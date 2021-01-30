@@ -36,10 +36,9 @@ const Courses = ({ data }) => {
   return (
     <>
       <Row className="justify-content-between">
-        <Col lg={5} md={12} xs={12} className="text-justify mb-5">
+        <Col lg={5} md={12} xs={12} className="course-headline text-justify mb-5">
           <div
-            className="mb-4"
-            style={{ color: "#ffd798", fontSize: "1.8rem" }}
+            className="mb-4 course-class"
           >
             {data.courses_title1}
           </div>

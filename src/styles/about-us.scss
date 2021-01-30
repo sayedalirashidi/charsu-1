@@ -213,8 +213,9 @@ $main-color: black;
   color: $main-color;
 }
 .contact-us {
-  margin-bottom: 8rem;
-  margin-left: 1.5rem;
+  margin-bottom:8rem;
+  margin-right:auto;
+  margin-left:auto;
 
   .icon {
     width: 36px;
@@ -359,6 +360,9 @@ $main-color: black;
   width: 40rem;
 }
 
+.poet-box{
+  margin-bottom:20px !important;
+}
 .header-img {
   width: 659px;
   position: relative;

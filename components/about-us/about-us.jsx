@@ -14,7 +14,7 @@ const AboutUs = ({ data }) => {
         >
           <div className="text-secondary mb-3">شعار ما بهترین تعهد ماست</div>
           <h2 className="title text-dark mt-2 mb-5">کیفیت ، تخصص ، صداقت</h2>
-          <div className="box_banner position-relative">
+          <div className="poet-box box_banner position-relative">
             <div className="d-block poet-text">
               من که ره بردم به گنجِ حُسنِ بی‌پایان دوست
             </div>
@@ -26,8 +26,7 @@ const AboutUs = ({ data }) => {
             <Col
               xs={12}
               lg="auto"
-              className="navigation my-2 my-lg-0 ml-2 d-flex align-items-center justify-content-center"
-            >
+              className="navigation my-2 my-lg-0 ml-2 d-flex align-items-center justify-content-center about-margin-button">
               <a className="text-secondary" href="#engineering-oath">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

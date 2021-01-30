@@ -54,6 +54,70 @@ const ContactUs = ({ data }) => {
   return (
     <div className="main-container contact-us mt-lg-5">
       <Row className="box-left justify-content-between">
+        <Col lg={5} xs={12} className="location">
+          <a href={data.img_link} target="_blank">
+            <img src={data.img} alt="" width="100%" className="mb-5" />
+          </a>
+          <div className="mb-5 d-flex align-items-center">
+            <div className="icon ml-2 d-flex align-items-center justify-content-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13.69"
+                height="19.557"
+                viewBox="0 0 13.69 19.557"
+              >
+                <path
+                  id="Icon_material-location-on"
+                  data-name="Icon material-location-on"
+                  d="M14.345,3A6.84,6.84,0,0,0,7.5,9.845c0,5.134,6.845,12.712,6.845,12.712S21.19,14.979,21.19,9.845A6.84,6.84,0,0,0,14.345,3Zm0,9.29A2.445,2.445,0,1,1,16.79,9.845,2.446,2.446,0,0,1,14.345,12.29Z"
+                  transform="translate(-7.5 -3)"
+                  fill="#0098a0"
+                />
+              </svg>
+            </div>
+            <span>{data.address}</span>
+          </div>
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <div className="icon ml-2 d-flex align-items-center justify-content-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.176"
+                  height="13.176"
+                  viewBox="0 0 13.176 13.176"
+                >
+                  <path
+                    id="Icon_awesome-phone"
+                    data-name="Icon awesome-phone"
+                    d="M12.7.633,10.02.015a.622.622,0,0,0-.708.358L8.077,3.255a.616.616,0,0,0,.178.721L9.814,5.252a9.537,9.537,0,0,1-4.56,4.56L3.978,8.252a.617.617,0,0,0-.721-.178L.375,9.31a.625.625,0,0,0-.36.71L.633,12.7a.617.617,0,0,0,.6.479,11.939,11.939,0,0,0,11.94-11.94A.617.617,0,0,0,12.7.633Z"
+                    transform="translate(0.001 0.001)"
+                    fill="#0098a0"
+                  />
+                </svg>
+              </div>
+              <span>{data.phone}</span>
+            </div>
+            <div className="d-flex align-items-center">
+              <span>{data.email}</span>
+              <div className="icon mr-2 d-flex align-items-center justify-content-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14.562"
+                  height="10.921"
+                  viewBox="0 0 14.562 10.921"
+                >
+                  <path
+                    id="Icon_simple-gmail"
+                    data-name="Icon simple-gmail"
+                    d="M14.562,5.41v9.1a.894.894,0,0,1-.91.91h-.91V7.162L7.281,11.083,1.82,7.162v8.259H.91a.893.893,0,0,1-.91-.91V5.41A.894.894,0,0,1,.91,4.5h.3L7.281,8.9l6.067-4.4h.3a.894.894,0,0,1,.91.91Z"
+                    transform="translate(0 -4.5)"
+                    fill="#0098a0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </Col>
         <Col lg={5} xs={12}>
           <div className="text-secondary  mb-3">{data.title1}</div>
           <h2 className="title text-dark mt-2 mb-5">{data.title2}</h2>
@@ -171,70 +235,6 @@ const ContactUs = ({ data }) => {
                 </Col>
               </Row>
             </form>
-          </div>
-        </Col>
-        <Col lg={5} xs={12} className="location">
-          <a href={data.img_link} target="_blank">
-            <img src={data.img} alt="" width="100%" className="mb-5" />
-          </a>
-          <div className="mb-5 d-flex align-items-center">
-            <div className="icon ml-2 d-flex align-items-center justify-content-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13.69"
-                height="19.557"
-                viewBox="0 0 13.69 19.557"
-              >
-                <path
-                  id="Icon_material-location-on"
-                  data-name="Icon material-location-on"
-                  d="M14.345,3A6.84,6.84,0,0,0,7.5,9.845c0,5.134,6.845,12.712,6.845,12.712S21.19,14.979,21.19,9.845A6.84,6.84,0,0,0,14.345,3Zm0,9.29A2.445,2.445,0,1,1,16.79,9.845,2.446,2.446,0,0,1,14.345,12.29Z"
-                  transform="translate(-7.5 -3)"
-                  fill="#0098a0"
-                />
-              </svg>
-            </div>
-            <span>{data.address}</span>
-          </div>
-          <div className="d-flex justify-content-between align-items-center">
-            <div className="d-flex align-items-center">
-              <div className="icon ml-2 d-flex align-items-center justify-content-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13.176"
-                  height="13.176"
-                  viewBox="0 0 13.176 13.176"
-                >
-                  <path
-                    id="Icon_awesome-phone"
-                    data-name="Icon awesome-phone"
-                    d="M12.7.633,10.02.015a.622.622,0,0,0-.708.358L8.077,3.255a.616.616,0,0,0,.178.721L9.814,5.252a9.537,9.537,0,0,1-4.56,4.56L3.978,8.252a.617.617,0,0,0-.721-.178L.375,9.31a.625.625,0,0,0-.36.71L.633,12.7a.617.617,0,0,0,.6.479,11.939,11.939,0,0,0,11.94-11.94A.617.617,0,0,0,12.7.633Z"
-                    transform="translate(0.001 0.001)"
-                    fill="#0098a0"
-                  />
-                </svg>
-              </div>
-              <span>{data.phone}</span>
-            </div>
-            <div className="d-flex align-items-center">
-              <span>{data.email}</span>
-              <div className="icon mr-2 d-flex align-items-center justify-content-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14.562"
-                  height="10.921"
-                  viewBox="0 0 14.562 10.921"
-                >
-                  <path
-                    id="Icon_simple-gmail"
-                    data-name="Icon simple-gmail"
-                    d="M14.562,5.41v9.1a.894.894,0,0,1-.91.91h-.91V7.162L7.281,11.083,1.82,7.162v8.259H.91a.893.893,0,0,1-.91-.91V5.41A.894.894,0,0,1,.91,4.5h.3L7.281,8.9l6.067-4.4h.3a.894.894,0,0,1,.91.91Z"
-                    transform="translate(0 -4.5)"
-                    fill="#0098a0"
-                  />
-                </svg>
-              </div>
-            </div>
           </div>
         </Col>
         <Col lg={2} className="d-none d-lg-block">
