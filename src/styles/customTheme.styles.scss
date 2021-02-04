@@ -96,6 +96,9 @@ a {
     margin-right: 0;
   }
   @media only screen and (max-width: 768px) {
+    .course-main-box{
+      width:80%;
+    }
     .header-left-arrow::before {
       content: "\f177";
       font: 40px/1 "FontAwesome";
@@ -110,9 +113,24 @@ a {
     }
   }
 }
+@media only screen and (min-width: 992px) {
+  .course-main-box{
+    width:47%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .left-sided{
+    text-align:left;
+    margin-bottom:1rem;
+    margin-top:0;
+  }
+}
 ///////////////////
 .nav-link {
   color: #5a5a5a !important;
+}
+.prj-wid{
+  width:60%;
 }
 .subtitle {
   font-size: 18px;
@@ -120,9 +138,15 @@ a {
   line-height: 1.33;
   text-align: right;
 }
+.big-arrows{
+  width:400px;
+}
 .course-class{
   color: #f8f3eb;
   font-size: 1.8rem;
+}
+.feather-arrow-down{
+  transform:rotate(90deg);
 }
 .poet-text{
   font-size:80%;

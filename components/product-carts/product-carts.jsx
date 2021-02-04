@@ -3,14 +3,16 @@ import React from "react";
 import style from "./product-carts.module.scss";
 
 const ProductCarts = ({ productData }) => {
+  const windowWidth = window.innerWidth;
+  const priceClassName = (windowWidth > 992) ? 'd-flex' : ''
   return (
     <div style={{ marginLeft: "70px" }}>
       <img src={productData.img} width="100%" height="300px" className="mb-3" />
       <div>
         <div className="product-title">{productData.title}</div>
-        <div className="d-flex justify-content-between align-items-center mt-4">
-          <span className="text-secondary">{productData.price}</span>
-          <button className={style["button"]}>
+        <div className={priceClassName+ " justify-content-between align-items-center mt-4"}>
+          <div className="left-sided text-secondary">{productData.price}</div>
+          <button className={style["button"] + " left-sided" }>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15.46"

@@ -63,6 +63,12 @@ a.text-secondary:focus {
     background: #0098a0;
   }
 }
+.orgenization-goal-text-font{
+  font-size:15px !important;
+}
+.orgenization-line-height li{
+  margin-bottom: 13px;
+}
 .main-container {
   max-width: 1366px;
   margin-right: auto;
@@ -167,7 +173,6 @@ a.text-secondary:focus {
     border: solid 2px #d2d2d2;
     background-color: #ffffff;
     padding: 1rem;
-    max-width: 185px;
     font-size: 1.4rem;
     &:hover {
       border-color: #0098a0;
@@ -336,14 +341,14 @@ $main-color: black;
     margin-bottom: 8rem;
   }
   .news {
-    padding: 4rem 4rem 4rem 11rem;
+    padding: 4rem 4rem 4rem 8rem;
     background-color: #f0efef;
     .news-container {
       .news-carts {
         overflow-x: scroll;
         flex-wrap: nowrap;
         padding-bottom: 4rem;
-        margin-left: 3rem;
+        margin-right: 0.3rem;
         .button {
           background-color: transparent;
           border: none;

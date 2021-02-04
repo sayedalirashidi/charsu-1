@@ -84,11 +84,7 @@ const AboutUs = ({ data }) => {
               lg="auto"
               className="navigation my-2 my-lg-0 mx-2 mx-md-0 mx-lg-2  d-flex align-items-center justify-content-center"
             >
-              <a
-                className="text-secondary"
-                href="#
-company-assignment"
-              >
+              <a className="text-secondary" href="# company-assignment">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17.6"
@@ -162,11 +158,7 @@ company-assignment"
               lg="auto"
               className="navigation my-2 my-lg-0 mx-2 mx-md-0 mx-lg-2 d-flex align-items-center justify-content-center"
             >
-              <a
-                className="text-secondary"
-                href="#
-principles-of-professional-ethics"
-              >
+              <a className="text-secondary" href="#principles-of-professional-ethics">
                 <svg
                   id="iconfinder_Tick_1737369"
                   xmlns="http://www.w3.org/2000/svg"
@@ -198,11 +190,7 @@ principles-of-professional-ethics"
               lg="auto"
               className="navigation my-2 my-lg-0 mx-2 mx-md-0 mx-lg-2 d-flex align-items-center justify-content-center"
             >
-              <a
-                className="text-secondary"
-                href="#
-earned-titles"
-              >
+              <a className="text-secondary" href="# earned-titles">
                 <svg
                   id="Layer_2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -322,7 +310,7 @@ earned-titles"
           <h2 className="text-dark title mt-2 mb-5">
             خط مشی و ماموریت سازمانی{" "}
           </h2>
-          <ul>
+          <ul className="orgenization-line-height orgenization-goal-text-font">
             <li className="mb-lg-4 mr-5 position-relative">
               ایجاد بستر مناسب برای مشارکت نیروهای متخصص و متعهد در صحنه توسعه
               اقتصادی کشور

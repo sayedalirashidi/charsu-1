@@ -7,27 +7,6 @@ import ArrowRight from "../arrows/arrow-right";
 import { Row, Col } from "react-bootstrap";
 import CategorySlider from "../category-slider/category-slider";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className + " right-arrow"}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className + " left-arrow"}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
 
 export default class CustomArrows extends Component {
   constructor(props) {
@@ -39,19 +18,23 @@ export default class CustomArrows extends Component {
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
-      nextArrow: <ArrowRight />,
-      prevArrow: <ArrowLeft />,
+      nextArrow: <div className="big-arrows"><svg xmlns="http://www.w3.org/2000/svg" width="26.715" height="14.724" viewBox="0 0 22.715 10.724"><g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)"><path id="Path_1" data-name="Path 1" d="M29.215,18H7.5" transform="translate(-9.5 -13.32)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_2" data-name="Path 2" d="M11.866,16.811,16,12.155,11.866,7.5" transform="translate(5.5 -7.5)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg></div>,
+      prevArrow: <div className="big-arrows"><svg xmlns="http://www.w3.org/2000/svg" width="26.715" height="14.724" viewBox="0 0 22.715 10.724"><g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(0.5 0.707)"><path id="Path_1" data-name="Path 1" d="M29.215,18H7.5" transform="translate(-7.5 -13.32)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_2" data-name="Path 2" d="M11.866,16.811,7.5,12.155,11.866,7.5" transform="translate(-7.5 -7.5)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg></div>,
       responsive: [
         {
           breakpoint: 766,
           settings: {
             slidesToShow: 1,
+            nextArrow:'', 
+            prevArrow:'', 
           },
         },
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
+            nextArrow:'', 
+            prevArrow:'', 
           },
         },
       ],
@@ -61,19 +44,23 @@ export default class CustomArrows extends Component {
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
-      nextArrow: <ArrowRight />,
-      prevArrow: <ArrowLeft />,
+      nextArrow: <div className="big-arrows"><svg xmlns="http://www.w3.org/2000/svg" width="26.715" height="14.724" viewBox="0 0 22.715 10.724"><g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)"><path id="Path_1" data-name="Path 1" d="M29.215,18H7.5" transform="translate(-9.5 -13.32)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_2" data-name="Path 2" d="M11.866,16.811,16,12.155,11.866,7.5" transform="translate(5.5 -7.5)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg></div>,
+      prevArrow: <div className="big-arrows"><svg xmlns="http://www.w3.org/2000/svg" width="26.715" height="14.724" viewBox="0 0 22.715 10.724"><g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(0.5 0.707)"><path id="Path_1" data-name="Path 1" d="M29.215,18H7.5" transform="translate(-7.5 -13.32)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_2" data-name="Path 2" d="M11.866,16.811,7.5,12.155,11.866,7.5" transform="translate(-7.5 -7.5)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg></div>,
       responsive: [
         {
           breakpoint: 766,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.2,
+            nextArrow:'', 
+            prevArrow:'', 
           },
         },
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
+            nextArrow:'', 
+            prevArrow:'', 
           },
         },
       ],
