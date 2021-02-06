@@ -5,6 +5,7 @@ import classnames from "classnames";
 const AboutUs = ({ data }) => {
   const [documents, setdocuments] = useState(1);
   return (
+    <>
     <div className="main-container about-us">
       <Row className="justify-content-between box-mobile box-left my-lg-5">
         <Col
@@ -294,10 +295,7 @@ const AboutUs = ({ data }) => {
           </button>
         </div>
       </div>
-      <div
-        className="information-box box-mobile box-left p-5 d-flex  my-lg-5"
-        id="company-assignment"
-      >
+      <div className="information-box box-mobile box-left p-5 d-flex my-lg-5" id="company-assignment" >
         <div className="d-none d-md-block">
           <img
             src="./images/josue-isai-ramos-figueroa-qvBYnMuNJ9A-unsplash.png"
@@ -351,11 +349,8 @@ const AboutUs = ({ data }) => {
             </li>
           </ul>
         </div>
-      </div>
-      <div
-        className="box-center p-5  my-lg-5"
-        id="principles-of-professional-ethics"
-      >
+    </div>
+      <div className="box-center p-5  my-lg-5" id="principles-of-professional-ethics" >
         <div className="text-secondary mb-3">رو تیتر این بخش</div>
         <h2 className="text-dark title mt-2 mb-5 nezam">
           نظام نامه رفتار حرفه ای اخلاقی در مهندسی ساختمان
@@ -372,10 +367,7 @@ const AboutUs = ({ data }) => {
           </button>
         </div>
       </div>
-      <div
-        className="documents box-mobile box-right py-5  my-lg-5"
-        id="earned-titles"
-      >
+      <div className="documents box-mobile box-right py-5  my-lg-5" id="earned-titles" >
         <Row className="justify-content-between">
           <Col lg={8} xs={12}>
             <div className="text-secondary mb-3">
@@ -390,7 +382,7 @@ const AboutUs = ({ data }) => {
                 className={classnames(
                   "mx-3",
                   "documents-navigation",
-                  documents == 1 ? "active" : null
+                  documents === 1 ? "active" : null
                 )}
               >
                 گواهینامه ها
@@ -400,7 +392,7 @@ const AboutUs = ({ data }) => {
                 className={classnames(
                   "mx-3",
                   "documents-navigation",
-                  documents == 2 ? "active" : null
+                  documents === 2 ? "active" : null
                 )}
               >
                 لوح تقدیر
@@ -410,7 +402,7 @@ const AboutUs = ({ data }) => {
                 className={classnames(
                   "mx-3",
                   "documents-navigation",
-                  documents == 3 ? "active" : null
+                  documents === 3 ? "active" : null
                 )}
               >
                 انجمن ها
@@ -419,10 +411,10 @@ const AboutUs = ({ data }) => {
           </Col>
         </Row>
         {documents === 1 && (
-          <Row className="justify-content-between flex-nowrap scroll-box horizontal-scroll">
+          <Row className="doc-box-pl justify-content-between flex-nowrap scroll-box horizontal-scroll">
             {data.certificates &&
               data.certificates.map((item) => (
-                <Col xs={12} md={4} lg={3} className="mb-5">
+                <Col xs={12} md={4} lg={2} className="doc-width mb-5">
                   <img src={item.img} width="210px" height="289px" alt="" />
                   <div className="text-secondary mt-4">{item.title}</div>
                 </Col>
@@ -470,6 +462,7 @@ const AboutUs = ({ data }) => {
         </Row>
       </div>
     </div>
+    </>
   );
 };
 export default AboutUs;

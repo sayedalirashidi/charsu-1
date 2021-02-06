@@ -6,7 +6,7 @@ const ProductCarts = ({ productData }) => {
   const windowWidth = window.innerWidth;
   const priceClassName = (windowWidth > 992) ? 'd-flex' : ''
   return (
-    <div style={{ marginLeft: "70px" }}>
+    <div className="pr-cart-margin">
       <img src={productData.img} width="100%" height="300px" className="mb-3" />
       <div>
         <div className="product-title">{productData.title}</div>

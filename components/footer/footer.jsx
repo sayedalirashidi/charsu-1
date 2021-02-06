@@ -165,7 +165,7 @@ const Footer = () => {
           </Row>
         </div>
       </div>
-      <div className="bg-primary text-light text-center p-4 margin-LR">
+      <div className="bg-primary text-light text-center p-4">
         تمام حقوق این سایت متعلق به شرکت چارسو امید توسعه میباشد و هرگونه کپی
         برداری بدون درج منبع آن پیگرد قانونی خواهد داشت
       </div>

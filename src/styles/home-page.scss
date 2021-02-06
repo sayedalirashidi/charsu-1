@@ -1,11 +1,11 @@
 @mixin box-right {
   margin-left: 6rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   padding-left: 5rem;
 }
 @mixin box-left {
   margin-right: 6rem;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   padding-right: 5rem;
 }
 @mixin vertical-scroll {
@@ -46,7 +46,7 @@
   margin-right: auto;
   margin-left: auto;
   .header-container {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     position: relative;
     height: 760px;
     text-align:justify;
@@ -75,7 +75,7 @@
     }
   }
   .cooprations {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem !important;
   }
   .projects {
     @include box-left();
@@ -124,7 +124,7 @@
   .courses {
     @include box-right();
     padding: 4rem 11rem 0 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
   .news {
     @include box-left();
@@ -142,7 +142,7 @@
     margin-right: auto;
     margin-left: auto;
     .header-container {
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
       position: relative;
       height: 760px;
       margin-top: -13rem;
@@ -170,7 +170,7 @@
       }
     }
     .cooprations {
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
       overflow: scroll;
       @include horizontal-scroll();
     }
@@ -201,7 +201,7 @@
       @include box-right();
       padding: 3rem;
       margin: 0;
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
     }
     .news {
       padding: 3rem;

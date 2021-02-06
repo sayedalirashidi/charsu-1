@@ -125,6 +125,14 @@ a {
     margin-top:0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .doc-width{
+    margin-left:50px;
+  }
+  .doc-box-pl{
+    padding-left:70px !important;
+  }
+}
 ///////////////////
 .nav-link {
   color: #5a5a5a !important;
@@ -138,6 +146,9 @@ a {
   line-height: 1.33;
   text-align: right;
 }
+.pr-cart-margin{
+  margin-right:40px;
+}
 .big-arrows{
   width:400px;
 }
@@ -150,6 +161,9 @@ a {
 }
 .poet-text{
   font-size:80%;
+}
+.constant-m{
+  margin-bottom:6rem !important;
 }
 .margin-LR{
   margin: 0 15px;

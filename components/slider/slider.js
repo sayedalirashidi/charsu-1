@@ -18,8 +18,24 @@ export default class CustomArrows extends Component {
 }
   render() {
     const settings = {
+      autoplay:true,
+      autoplaySpeed:5000,
       nextArrow: <svg xmlns="http://www.w3.org/2000/svg" width="22.715" height="10.724" viewBox="0 0 22.715 10.724"><g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)"><path id="Path_1" data-name="Path 1" d="M29.215,18H7.5" transform="translate(-7.5 -13.32)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_2" data-name="Path 2" d="M11.866,16.811,16,12.155,11.866,7.5" transform="translate(5.5 -7.5)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg>,
       prevArrow: <svg xmlns="http://www.w3.org/2000/svg" width="22.715" height="10.724" viewBox="0 0 22.715 10.724"><g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(0.5 0.707)"><path id="Path_1" data-name="Path 1" d="M29.215,18H7.5" transform="translate(-7.5 -13.32)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path id="Path_2" data-name="Path 2" d="M11.866,16.811,7.5,12.155,11.866,7.5" transform="translate(-7.5 -7.5)" fill="none" stroke="#0098a0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></g></svg>,
+      responsive: [
+        {
+          breakpoint:766,
+          settings: {
+            arrows:false,
+          },
+        },
+        {
+          breakpoint:992,
+          settings: {
+            arrows:false,
+          }
+        }
+      ]
     };
     return (
       <>

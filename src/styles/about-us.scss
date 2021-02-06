@@ -123,6 +123,11 @@ a.text-secondary:focus {
     }
   }
   .information-box {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 17px;
+  line-height: 1.5;
+    width:100%;
     background-color: #f7f7f7;
     li {
       color: #000000;
@@ -188,6 +193,9 @@ a.text-secondary:focus {
   max-height: 150px;
 }
 @media only screen and (max-width: 768px) {
+    .category-name {
+      width: 40%;
+    }
   .nezam {
     max-width: 100%;
   }
@@ -218,7 +226,7 @@ $main-color: black;
   color: $main-color;
 }
 .contact-us {
-  margin-bottom:8rem;
+  margin-bottom:6rem;
   margin-right:auto;
   margin-left:auto;
 
@@ -286,7 +294,7 @@ $main-color: black;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   .header-container {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     position: relative;
     height: 760px;
     margin-top: -13rem;
@@ -314,7 +322,7 @@ $main-color: black;
     }
   }
   .cooprations {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
   .projects {
     padding-top: 2rem;
@@ -338,7 +346,7 @@ $main-color: black;
   }
   .courses {
     padding: 4rem 11rem 0 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
   .news {
     padding: 4rem 4rem 4rem 8rem;
@@ -437,7 +445,7 @@ $main-color: black;
     margin-right: auto;
     margin-left: auto;
     .header-container {
-      // margin-bottom: 8rem;
+      // margin-bottom: 6rem;
       height: auto;
       margin-top: 0;
       padding-top: 3rem;
@@ -458,7 +466,7 @@ $main-color: black;
       }
     }
     .cooprations {
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
       overflow: scroll;
     }
     .projects {
@@ -484,7 +492,7 @@ $main-color: black;
     .courses {
       padding: 3rem;
       margin: 0;
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
     }
     .news {
       padding: 3rem;
@@ -568,17 +576,32 @@ $main-color: black;
     background: #0098a0;
   }
 }
+.product-margin-top{
+  margin:6rem 0 !important;
+}
+.product-margin-bottom{
+  margin-bottom: 30px;
+}
+.category-container-top {
+  width:99%;
+  margin:0 auto;
+}
 .category-container {
+  width:99%;
+  margin:0 auto;
   .slick-list {
     margin-right: 0 !important;
+    width: 90%;
   }
   .slick-next {
     right: 4px;
     top: 23%;
+    z-index:10;
   }
   .slick-prev {
     left: 98%;
     top: 58%;
+    z-index:10;
   }
   // width: 100%;
   .category-name-container {
@@ -587,15 +610,14 @@ $main-color: black;
     .category-name {
       position: absolute;
       right: 10%;
-      top: 60%;
-      width: 110px;
+      top: 70%;
+      width: 14rem;
       height: 30px;
       border-radius: 18px;
       background-color: #ffffff;
-      font-weight: 800;
+      font-weight: 700;
     }
   }
-
   .slick-track {
     display: flex;
     justify-content: end;

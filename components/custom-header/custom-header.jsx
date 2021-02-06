@@ -8,19 +8,15 @@ const CustomHeader = ({ data }) => {
 
   return (
     <div className="header-container">
-      <Row className="margin-LR">
+      <Row>
         <Col xs="12" lg="5">
           <div className="position-relative h-100">
-            <div className="text-secondary mb-3">{data.header_title1}</div>
-            <h2 className="text-dark">{data.header_title2}</h2>
-            <p
-              className={classnames(
-                "text-justify mb-5 header-text",
-                !showMore ? "less-text" : "more-text"
-              )}
-            >
-              {data.header_text}
-            </p>
+            <div className="margin-LR text-secondary mb-3">{data.header_title1}</div>
+            <h2 className="margin-LR text-dark">{data.header_title2}</h2>
+            <p className={classnames(
+              "text-justify mb-5 header-text",
+              !showMore ? "less-text" : "more-text"
+            )}>{data.header_text}</p>
             { !showMore && 
             <button
               className="header-text-btn px-0 d-none d-lg-block"

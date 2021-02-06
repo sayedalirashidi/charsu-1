@@ -31,7 +31,7 @@ const HomePage = ({ data }) => {
       <Container className="d-lg-block">
         <Products data={data} />
       </Container>
-      <div className="news cooprations">
+      <div className="constant-m news cooprations">
         <News data={data} />
       </div>
     </div>
