@@ -14,7 +14,7 @@ const CustomHeader = ({ data }) => {
             <div className="margin-LR text-secondary mb-3">{data.header_title1}</div>
             <h2 className="margin-LR text-dark">{data.header_title2}</h2>
             <p className={classnames(
-              "text-justify mb-5 header-text",
+              "text-justify mb-5 header-text margin-LR",
               !showMore ? "less-text" : "more-text"
             )}>{data.header_text}</p>
             { !showMore && 

@@ -159,6 +159,11 @@ a {
 .feather-arrow-down{
   transform:rotate(90deg);
 }
+@media only screen and (max-width: 992px) {
+  .feather-arrow-down{
+    display:none;
+  }
+}
 .poet-text{
   font-size:80%;
 }
