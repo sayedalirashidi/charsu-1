@@ -16,7 +16,7 @@ const AboutUs = ({ data }) => {
           <div className="text-secondary mb-3">شعار ما بهترین تعهد ماست</div>
           <h2 className="title text-dark mt-2 mb-5">کیفیت ، تخصص ، صداقت</h2>
           <div className="poet-box box_banner position-relative">
-            <div className="d-block poet-text">
+            <div className="d-block poet-text poet-pointer">
               من که ره بردم به گنجِ حُسنِ بی‌پایان دوست
             </div>
             <div className="d-block text-left poet-text">

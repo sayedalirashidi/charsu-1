@@ -114,23 +114,38 @@ a {
   }
 }
 @media only screen and (min-width: 992px) {
+  .side-pic{
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    order: 3;
+  }
+  .location{
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
   .course-main-box{
     width:47%;
   }
-}
-@media only screen and (max-width: 991px) {
-  .left-sided{
-    text-align:left;
-    margin-bottom:1rem;
-    margin-top:0;
-  }
-}
-@media only screen and (min-width: 992px) {
   .doc-width{
     margin-left:50px;
   }
   .doc-box-pl{
     padding-left:70px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .feather-arrow-down{
+    display:none;
+  }
+  .left-sided{
+    text-align:left;
+    margin-bottom:1rem;
+    margin-top:0;
   }
 }
 ///////////////////
@@ -159,11 +174,6 @@ a {
 .feather-arrow-down{
   transform:rotate(90deg);
 }
-@media only screen and (max-width: 992px) {
-  .feather-arrow-down{
-    display:none;
-  }
-}
 .poet-text{
   font-size:80%;
 }
@@ -184,7 +194,6 @@ a {
   background-color: #00626d;
   color: #00234f !important;
 }
-
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 @import "./scss/bootstrap.scss";
