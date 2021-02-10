@@ -89,19 +89,23 @@ a.text-secondary:focus {
     margin-right: auto;
   }
   .box-center {
+    padding-top:0 !important;
     max-width: 1265px;
     margin: 0 auto;
   }
 }
 .about-us {
   .box_banner {
+    z-index:2;
     max-width: 990px;
     height: 279px;
     font-size: 2.7rem;
     padding: 60px 50px;
     line-height: 75px;
-    background-image: url(../../public/images/Rectangle81.png);
+    background: linear-gradient(75deg, rgba(255,255,255,1) 0%, rgba(231,231,231,0.7) 55%);
+    //background-image: url(../../public/images/Rectangle81.png);
     &::after {
+      z-index:-3;
       content: "";
       background-image: url(../../public/images/nicely-1.png);
       position: absolute;
@@ -112,6 +116,7 @@ a.text-secondary:focus {
       height: 185px;
     }
     &::before {
+      z-index:-3;
       content: "";
       background-image: url(../../public/images/nicely.png);
       position: absolute;
@@ -191,6 +196,14 @@ a.text-secondary:focus {
 .selected-course {
   overflow: hidden;
   max-height: 150px;
+}
+@media only screen and (min-width: 769px) {
+  .menu-color{
+    color: black !important;
+  }
+  .menu-item-color{
+    color: white !important;
+  }
 }
 @media only screen and (max-width: 768px) {
     .category-name {
@@ -515,6 +528,7 @@ $main-color: black;
   }
 }
 .header-text {
+  margin-top:10px;
   line-height: 28px;
 }
 .less-text {

@@ -119,7 +119,7 @@ const ContactUs = ({ data }) => {
           </div>
         </Col>
         <Col lg={5} xs={12}>
-          <div className="text-secondary  mb-3">{data.title1}</div>
+          <div className="text-secondary mb-3">{data.title1}</div>
           <h2 className="title text-dark mt-2 mb-5">{data.title2}</h2>
           <div className="group">
             <form
@@ -237,7 +237,7 @@ const ContactUs = ({ data }) => {
             </form>
           </div>
         </Col>
-        <Col lg={2} className="d-none d-lg-block">
+        <Col lg={2} className="side-pic d-none d-lg-block">
           <img
             src="./images/nick-morrison-FHnnjk1Yj7Y-unsplash.png"
             alt=""

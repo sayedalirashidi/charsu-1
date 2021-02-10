@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import ProjectCart from "../project-cart/project-cart";
 import Slider from "react-slick";
+import ScrollingMenu from "../react-scrolling-menu/react-scrolling-menu";
 
 const Projects = ({ data }) => {
   const settings = {
@@ -39,14 +40,12 @@ const Projects = ({ data }) => {
         </Col>
       </Row>
       <Row className="width text-justify project-carts horizontal-scroll">
-        <Slider {...settings}>
-        {data.projects &&
-          data.projects.map((item) => (
+          {data.projects &&
+            data.projects.map((item) =>(
             <Col lg={4} md={6} xs={12}>
               <ProjectCart projectData={item} />
             </Col>
-          ))}
-        </Slider>
+            ))}
       </Row>
     </div>
     </>
