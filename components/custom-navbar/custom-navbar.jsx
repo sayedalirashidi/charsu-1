@@ -64,6 +64,22 @@ const CustomNavbar = ({ nameClass }) => {
       .post("http://103.215.223.142:8000/api/message", object)
       .then((res) => {});
   };
+
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // Handler to call on window resize
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+  }, []);
+    console.log(88888, windowSize.width);
+  const newWidth = windowSize.width;
   return (
     <>
       <Navbar
@@ -117,18 +133,18 @@ const CustomNavbar = ({ nameClass }) => {
             </Nav.Link>
             <Nav.Link
               href="#courses"
-              style={{ color: `${nameClass}` }}
-              className="mx-3"
+              style={{ color: (!(newWidth > 992)) ?  '' : `${nameClass}` }}
+              className="mx-3 menu-item-color"
             >
               {data.title5}
             </Nav.Link>
             <Nav.Link
               href="/about"
-              style={{ color: `${nameClass}` }}
+              style={{ color: (!(newWidth > 992)) ?  '' : `${nameClass}` }}
               className={
                 router.pathname === "/about.html"
                   ? `mx-3 active-navlink`
-                  : ` mx-3`
+                  : ` mx-3 menu-item-color`
               }
             >
               {data.title6}

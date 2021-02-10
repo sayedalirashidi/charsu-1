@@ -85,7 +85,7 @@ const AboutUs = ({ data }) => {
               lg="auto"
               className="navigation my-2 my-lg-0 mx-2 mx-md-0 mx-lg-2  d-flex align-items-center justify-content-center"
             >
-              <a className="text-secondary" href="# company-assignment">
+              <a className="text-secondary" href="#company-assignment">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17.6"
@@ -191,7 +191,7 @@ const AboutUs = ({ data }) => {
               lg="auto"
               className="navigation my-2 my-lg-0 mx-2 mx-md-0 mx-lg-2 d-flex align-items-center justify-content-center"
             >
-              <a className="text-secondary" href="# earned-titles">
+              <a className="text-secondary" href="#earned-titles">
                 <svg
                   id="Layer_2"
                   xmlns="http://www.w3.org/2000/svg"
